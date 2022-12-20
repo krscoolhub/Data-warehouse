@@ -1,12 +1,15 @@
 # Data-warehouse
 
 # DataBase
-A database is a collection of data that is stored and organized in a specific way, so that it can be accessed, modified, and analyzed efficiently. There are many
-different types of databases, each designed to support specific types of data and applications.
+A database is a collection of data that is stored and organized in a specific way, so that it can be accessed, modified, and analyzed efficiently. 
+There are many different types of databases, each designed to support specific types of data and applications.
+
 The most common type of database is the relational database, which stores data in a series of tables that are related to one another through common fields. Relational
 databases are based on the structured query language (SQL), which is a standard language for querying and manipulating data in a database.
+
 Other types of databases include object-oriented databases, which store data in the form of objects, and NoSQL databases, which are designed to support large volumes
 of data that may be structured or unstructured.
+
 Databases are an essential part of many computer systems and are used in a wide range of applications, including business, finance, healthcare, and government. They
 are typically accessed through a database management system (DBMS) or other software applications, which allow users to query the data, update it, and generate reports
 and analytics.
