@@ -142,3 +142,21 @@ The main advantage of the snowflake schema is that it can reduce redundancy and 
 However, the snowflake schema can also be more complex and harder to query than the STAR schema, as it requires more joins to access the data. It is also more resource-intensive, as it requires more storage space and may take longer to query and analyze the data.
 
 Overall, the snowflake schema is a useful approach for organizing and storing data in a data warehouse, but it is important to carefully consider the trade-offs between the benefits and drawbacks when deciding whether to use it.
+
+
+
+# Star schema vs snowflake schema
+The STAR schema and the snowflake schema are both types of database schemas that are commonly used in data warehousing and business intelligence (BI) systems. Both schemas are based on the idea of a central fact table, which contains the measures or data points that are used for analysis, and a series of dimension tables, which provide context and additional information about the data in the fact table.
+
+However, there are some key differences between the two schemas:
+
+Normalization: The main difference between the STAR schema and the snowflake schema is the degree of normalization. The STAR schema is a denormalized schema, which means that the data is stored in a single table and is not divided into smaller, more specific tables. In contrast, the snowflake schema is a partially normalized schema, which means that the data in the dimension tables is divided into smaller, more specific tables, which are known as "snowflaked" dimensions.
+
+Redundancy: The STAR schema can result in more redundancy, as it stores the same data in multiple places. This can make it more difficult to update and maintain the data, as changes need to be made in multiple locations. In contrast, the snowflake schema can reduce redundancy, as it stores data in a more granular and specific way. This can make it easier to update and maintain the data, as changes only need to be made in a single location.
+
+Query performance: The STAR schema is generally easier to query and analyze than the snowflake schema, as it requires fewer joins to access the data. However, the snowflake schema can be more accurate and less prone to data inconsistencies, as it stores data in a more granular and specific way.
+
+Overall, the choice between the STAR schema and the snowflake schema depends on the specific needs and requirements of the organization. It is important to carefully consider the trade-offs between the benefits and drawbacks of each schema when deciding which one to use.
+
+
+
