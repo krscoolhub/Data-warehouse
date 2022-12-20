@@ -16,6 +16,17 @@ and analytics.
 
 
 
+# Database NORMALIZATION
+Normalization is a database design technique that is used to reduce redundancy and dependency in a database. It is based on the idea that data should be stored in a way that minimizes the need for repeating data and ensures that data is stored in a consistent and logical way.
+
+There are several levels of normalization, ranging from first normal form (1NF) to fifth normal form (5NF). Each level of normalization builds on the previous level and adds additional rules to ensure that the data is organized in a more efficient and consistent way.
+
+# The main goal of normalization is to minimize redundancy and ensure that the data is stored in a logical and consistent way. This can help to reduce the risk of data inconsistencies and improve the performance and scalability of the database.
+
+Normalization is an important aspect of database design, as it can help to ensure that the database is organized in a way that is efficient and easy to maintain. It is often used in conjunction with other database design techniques, such as indexing and data partitioning, to optimize the performance and scalability of the database.
+
+
+
 # Data warehouse
 A data warehouse is a large, centralized repository of data that is used for reporting and analysis.
 
