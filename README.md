@@ -121,3 +121,24 @@ Overall, the design process for a data warehouse is an iterative process that in
 
 
 
+# STAR Schema
+ STAR schema is a common approach for organizing and storing data for reporting and analysis. 
+ It is a denormalized schema that is based on the idea of a central fact table, which contains the measures or data points that are used for analysis, and a series of dimension tables, which provide context and additional information about the data in the fact table.
+
+The fact table in a STAR schema typically contains a large number of records, each of which represents a single event or transaction. It may include a wide range of measures and data points, such as sales volume, revenue, cost, and profit margin. The dimension tables contain data about specific aspects of the business, such as products, customers, locations, and time.
+
+The STAR schema is well-suited for data warehousing and business intelligence (BI) applications, as it allows users to easily query and analyze the data and generate reports and analytics. It is also relatively easy to maintain and update, as it only requires changes to be made in a single location (the fact table) when data is added or updated.
+
+Overall, the STAR schema is a useful approach for organizing and storing data in a data warehouse, as it allows users to easily access and analyze the data and supports a wide range of reporting and analytics activities.
+
+
+# Snowflake Schema
+A snowflake schema is a type of database schema that is used in data warehousing and business intelligence (BI) systems. It is a variation of the STAR schema, which is a denormalized schema that is based on a central fact table and a series of dimension tables.
+
+In a snowflake schema, the dimension tables are further normalized into additional tables, which are known as "snowflaked" dimensions. This means that the data in the dimension tables is divided into smaller, more specific tables, which are connected to the main dimension tables through foreign keys.
+
+The main advantage of the snowflake schema is that it can reduce redundancy and improve the accuracy of the data, as it allows data to be stored in a more granular and specific way. It also makes it easier to update and maintain the data, as changes only need to be made in a single location (the snowflaked dimension table) rather than in multiple locations.
+
+However, the snowflake schema can also be more complex and harder to query than the STAR schema, as it requires more joins to access the data. It is also more resource-intensive, as it requires more storage space and may take longer to query and analyze the data.
+
+Overall, the snowflake schema is a useful approach for organizing and storing data in a data warehouse, but it is important to carefully consider the trade-offs between the benefits and drawbacks when deciding whether to use it.
